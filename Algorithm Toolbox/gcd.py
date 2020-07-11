@@ -1,3 +1,5 @@
+import sys
+
 def gcd(a,b):
     if a>b:
         if b==0:
@@ -11,6 +13,6 @@ def gcd(a,b):
             return gcd(a,b%a)
 
 if __name__=="__main__":
-    a = int(input())
-    b = int(input())
+    a, b = map(int, input().split())
     print(gcd(a,b))
+
